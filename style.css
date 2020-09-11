@@ -1,0 +1,379 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+}
+
+
+body {
+    font-family: sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: #777777;
+    padding: 30px;
+}
+
+.header {
+    height: 95vh;
+    background-image: linear-gradient(to right bottom, #0f0f0fb2, #df2f17),url(laptop.jpeg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 700px, 0 100%);
+}
+
+
+.logo-box {
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+
+.logo {
+ height: 35px;
+}
+
+
+.text-box {
+    position: absolute;
+    top: 45%;
+    left: 20%;
+    text-align: center;
+}
+
+.heading-primary {
+  color: #fff !important;
+}
+
+
+.heading-primary-main {
+ display: block;
+ font-size: 60px;
+ font-weight: 400;
+ letter-spacing: 35px;
+ animation-name: moveInLeft;
+ animation-duration: 3s;
+ animation-timing-function: ease-out;
+}
+
+.heading-primary-sub {
+   display: block;
+   font-size: 20px;
+   font-weight: 400;
+   letter-spacing: 15px;
+   animation-name: moveInRight;
+   animation-duration: 3s;
+}
+
+@keyframes moveInLeft {
+    0% {
+     opacity: 0;
+     transform: translateX(-100px);
+    }
+
+   80% {
+    transform: translateX(20px);
+   }
+
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+}
+
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+   transform: translateX(100px);  
+}
+
+
+  80% {
+  transform: translateX(-20px);
+  }
+
+100% {
+ opacity: 1;
+ transform: translateX(0);
+}
+
+}
+
+
+@keyframes moveInUp {
+    0% {
+        opacity: 0;
+      transform:  translateY(100px)
+    }
+
+
+    80% {
+        transform: translateY(0);
+    }
+
+  100% {
+      opacity: 1;
+      transform: translateY(30px);
+  }
+}
+
+
+
+.btn:link,
+.btn:visited {
+  text-decoration: none;
+  padding: 1px 40px;
+  display: inline-block;
+  border-radius: 100px;
+  transition: all .2s;  
+  transform: translateY(30px);
+  animation-name: moveInUp;
+  animation-duration: 3s;
+}
+
+.btn:hover {
+    transform: translateY(27px);
+    box-shadow: 0 10px 20px;
+}
+
+.btn:active {
+    transform: translateX(-1px);
+}
+
+
+.btn-white {
+    background-color: #fff;
+    color: #000000
+}
+
+
+.text-display {
+}
+
+
+.skills {
+
+    background-image: linear-gradient(to right bottom, #0f0f0fb2, #df2f17),url(laptop2.jpeg);
+    background-size: cover;
+    height: 95vh;
+    clip-path: polygon(100% 0, 100% 74%, 0 100%, 0 18%);
+   transform: translateY(1000px);
+}
+
+
+.skill-text {
+    position: absolute;
+    left:45%;
+    top:20%;
+    font-size: 50px;
+    transform: rotate(-5deg)
+    skew(-5deg);
+    color:#fff;
+}
+
+
+.about-me {
+   position: absolute;
+    left:40%;
+    transform: translateX(-300px);
+    font-size: 60px;
+     font-weight: 400;
+    letter-spacing: 20px;
+    color: #8b0000;
+}
+
+
+.about-me-title {
+   position: absolute;
+    transform: translateY(130px); 
+    left: 15%
+
+}
+
+.about-me-experienced {
+    position: absolute;
+    transform: translateY(500px); 
+    left: 60%
+}
+
+
+.about-me-expfill {
+    position: absolute;
+    transform: translateY(580px);
+    max-width: 500px;
+    left: 60% 
+}
+.about-me-fill {
+    position: absolute;
+    transform: translateY(200px);
+    max-width: 500px;
+    left: 15%
+}
+
+
+
+.box-1{
+    position: absolute;
+    transform: translateY(125px);
+    background-color: #fff;
+    width: 300px;
+    height: 420px;
+    left: 10%;
+    top:10%;
+    opacity: 0.7;
+    padding: 100px;
+    margin: 40px;
+
+}
+
+.box-2{
+    position: absolute;
+    transform: translateY(125px);
+    background-color: #fff;
+    width: 300px;
+    height: 420px;
+    left: 30%;
+    top:10%;
+    opacity: 0.7;
+    padding: 100px;
+    margin: 40px;
+
+
+}
+.box-3{
+    position: absolute;
+    transform: translateY(125px);
+    background-color: #fff;
+    width: 300px;
+    height: 420px;
+    left: 50%;
+    top:10%;
+    opacity: 0.7;
+    padding: 100px;
+    margin: 40px;
+
+}
+
+.box-4{
+    position: absolute;
+    transform: translateY(125px);
+    background-color: #fff;
+    width: 300px;
+    height: 420px;
+    left: 70%;
+    top:10%;
+    opacity: 0.7;
+    padding: 100px;
+    margin: 40px;
+
+}
+
+.box-1:hover {
+    animation-name: boxmove;
+    animation-duration: 2s;
+}
+
+.box-2:hover {
+    animation-name: boxmove;
+    animation-duration: 2s;
+}
+
+.box-3:hover {
+    animation-name: boxmove;
+    animation-duration: 2s;
+}
+
+.box-4:hover {
+    animation-name: boxmove;
+    animation-duration: 2s;
+}
+
+
+.js {
+    position: relative;
+    width: 150px;
+    left: -20%
+}
+
+.js-1 {
+    font-size: 15px;
+    left:20%;
+}
+
+@keyframes boxmove {
+    50% {
+        top: -10px;
+    }
+    100% {
+        top: 90px;
+    }
+}
+
+
+
+
+.image1 {
+    position: absolute;
+      transform: translateY(500px);
+    height: 300px;
+    left: 15%
+}
+
+.image1:hover{
+  animation-name: grow;
+  animation-duration: 2s;
+}
+.image2:hover {
+animation-name: grow;
+animation-duration: 2s;
+}
+
+
+@keyframes grow{
+    50%  {
+        height: 400px;
+    }
+}
+.image2 {
+    position: absolute;
+    left: 60%;
+    height:300px;
+    transform: translateY(150px);
+}
+
+.html-5 {
+    height: 100px;
+}
+
+.html-1 {
+    font-size: 15px;
+
+}
+
+.css-1 {
+    height: 100px;
+ 
+}
+.css-text {
+    font-size: 15px;
+
+}
+
+.python {
+    height:100px;
+}
+
+
+.python-1 {
+    font-size: 15px;
+
+}
+
+
+.about-me:hover {
+    animation-name: shake;
+    animation-duration: 1s;
+}
+
